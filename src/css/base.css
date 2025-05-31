@@ -31,13 +31,55 @@ main:has(.back-link) {
   text-align: center;
 }
 
-.nav-link > li {
-  text-align: center;
-  font-size: 42px;
-  margin-bottom: 42px;
+.form {
+  margin-top: 36px;
+  margin-left: 40%;
+}
+
+.form > label > input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
 
   &:hover {
-    text-decoration: underline;
-    color: blueviolet;
+    border: 1px solid #000;
+  }
+
+  &:focus {
+    border: 1px solid #4e75ff;
+    outline: none;
+
+    color: #2e2f42;
+  }
+}
+
+.form > button {
+  margin-left: 8px;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  border: none;
+  background: #4e75ff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  &:hover {
+    background: #6c8cff;
   }
 }
