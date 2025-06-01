@@ -15,6 +15,7 @@ searchForm.addEventListener('submit', handleSearch);
 
 async function handleSearch(event) {
   event.preventDefault();
+
   const searchQuery = searchInput.value.trim();
   clearGallery();
 
@@ -33,9 +34,10 @@ async function handleSearch(event) {
     hideLoader();
 
     if (data.hits.length === 0) {
-      iziToast.info({
-        title: 'Info',
-        message: 'No images found. Please try again.',
+      iziToast.error({
+        title: '',
+        message:
+          'Sorry, there are no images matching your search query. Please try again!',
         position: 'topRight',
       });
       return;
